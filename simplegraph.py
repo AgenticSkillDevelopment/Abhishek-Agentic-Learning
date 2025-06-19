@@ -43,3 +43,5 @@ graph.add_edge("badminton", END)
 compiled_graph = graph.compile()
 
 display(Image(compiled_graph.get_graph().draw_mermaid_png()))
+
+
