@@ -1,0 +1,19 @@
+# Core tools
+crewai
+crewai-tools
+
+# Language model interface
+ollama
+
+# Pydantic for schema validation
+pydantic>=2.6.0
+
+# Financial data fetching
+yfinance
+
+# Visualization and data manipulation
+pandas>=2.2.2
+matplotlib>=3.8.4
+
+# Jupyter-friendly I/O
+ipykernel>=6.29.4

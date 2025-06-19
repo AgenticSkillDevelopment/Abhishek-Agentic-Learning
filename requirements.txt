@@ -9,3 +9,9 @@ langchain-groq
 arxiv
 wikipedia
 mcp-server
+llama-index
+tqdm>=4.66.4
+qdrant-client>=1.8.0
+sentence-transformers>=2.6.1
+transformers>=4.41.2
+torch>=2.3.0
