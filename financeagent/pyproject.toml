@@ -5,9 +5,13 @@ description = "A CrewAI-based financial analysis system"
 dependencies = [
     "crewai",
     "yfinance",
-    "pydantic",
+    "pydantic>=2.6.0",
     "crewai-tools",
     "mcp",
+    "ollama>=0.5.1",
+    "pandas>=2.2.2",
+    "matplotlib>=3.8.4",
+    "ipykernel>=6.29.4",
 ]
 requires-python = ">=3.12"
 
