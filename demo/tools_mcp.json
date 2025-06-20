@@ -1,0 +1,12 @@
+{
+    "math": {
+      "command": "python",
+      "args": ["maths.py"],
+      "transport": "stdio"
+    },
+    "weather": {
+      "url": "http://localhost:8000/mcp",
+      "transport": "streamable_http"
+    }
+  }
+  
