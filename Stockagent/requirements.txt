@@ -1,0 +1,9 @@
+langchain	
+langgraph	
+langchain-mcp-adapters	
+fastmcp	
+langchain-groq	
+python-dotenv	
+yfinance
+mcp
+mcp-use
