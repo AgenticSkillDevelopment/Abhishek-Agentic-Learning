@@ -1,0 +1,16 @@
+{
+    "math": {
+      "command": "python",
+      "args": ["maths.py"],
+      "transport": "stdio"
+    },
+    "weather": {
+      "url": "http://localhost:8001/mcp",
+      "transport": "streamable_http"
+    },
+    "count_string": {
+      "url": "http://localhost:8002/mcp",
+      "transport": "streamable_http"
+    }
+  }
+  
