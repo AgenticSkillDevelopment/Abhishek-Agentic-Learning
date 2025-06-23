@@ -1,0 +1,20 @@
+RAG is an advanced architecture that combines a language model (LLM) with a retrieval system to generate accurate, contextually relevant, and up-to-date responses — even when the model wasn’t trained on that specific information.
+
+🧠 In Simple Terms:
+Instead of relying only on what the LLM "remembers" from training, RAG allows it to look up information from external knowledge sources (like PDFs, documents, or databases) during inference.
+
+🧩 Components of RAG
+1. Query Encoder
+Converts the user’s natural language question into a dense vector.
+
+Used to find semantically similar documents.
+
+2. Retriever
+Finds the most relevant chunks of information (documents) from a vector database like FAISS, Weaviate, Chroma, or Pinecone.
+
+Based on semantic similarity, not just keyword matching.
+
+3. Generator (LLM)
+Takes retrieved documents + the original query.
+
+Generates a coherent, informed answer using both.
