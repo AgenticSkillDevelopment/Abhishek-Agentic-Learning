@@ -1,0 +1,23 @@
+version: '3.12'
+
+services:
+  math:
+    build:
+      context: .
+    command: python maths.py
+    stdin_open: true
+    tty: true
+
+  weather:
+    build:
+      context: .
+    command: python weather.py
+    ports:
+      - "8001:8001"
+
+  countstring:
+    build:
+      context: .
+    command: python count_string.py
+    ports:
+      - "8002:8002"
