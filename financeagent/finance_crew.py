@@ -6,6 +6,8 @@ from pydantic import BaseModel, Field
 from crewai import Agent, Task, Crew, Process, LLM
 from crewai_tools import CodeInterpreterTool, FileReadTool
 import warnings
+from dotenv import load_dotenv
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
@@ -15,11 +17,17 @@ class QueryAnalysisOutput(BaseModel):
     timeframe: str = Field(..., description="Time period (e.g., '1d', '1mo', '1y').")
     action: str = Field(..., description="Action to be performed (e.g., 'fetch', 'plot').")
 
-llm = LLM(
-    model="ollama/deepseek-r1:7b",
-    base_url="http://localhost:11434",
-    # temperature=0.7
-)
+
+
+
+load_dotenv()
+
+llm=ChatGoogleGenerativeAI(model="gemini-1.5-flash",
+                           verbose=True,
+                           temperature=0.5,
+                           google_api_key=os.getenv("GOOGLE_API_KEY"))
+
+
 
 # 1) Query parser agent
 query_parser_agent = Agent(
