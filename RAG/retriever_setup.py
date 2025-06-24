@@ -3,9 +3,10 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import WebBaseLoader
 
 # 1. Load text file
-loader = TextLoader("my_data.txt")
+loader = WebBaseLoader(["https://en.wikipedia.org/wiki/Zodiac_(film)"])
 docs = loader.load()
 
 # 2. Split the document into chunks
