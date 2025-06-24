@@ -1,0 +1,12 @@
+{
+    "servers": [
+      {
+        "id": "local-mcp",
+        "url": "http://localhost:4321/mcp",
+        "tools": [
+          "ask_agent"
+        ]
+      }
+    ]
+  }
+  

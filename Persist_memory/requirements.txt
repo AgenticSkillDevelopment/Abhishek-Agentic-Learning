@@ -1,0 +1,12 @@
+langchain
+pinecone-client
+langgraph
+mcp
+huggingface-hub
+python-dotenv
+langgraph	
+langchain-mcp-adapters	
+fastmcp	
+langchain-groq	
+python-dotenv
+mcp-use
