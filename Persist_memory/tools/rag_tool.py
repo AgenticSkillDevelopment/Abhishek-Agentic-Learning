@@ -29,7 +29,7 @@ def create_rag_tool():
     documents = loader.load()
     chunks = CharacterTextSplitter(chunk_size=600, chunk_overlap=50).split_documents(documents)
 
-    # ✅ Use LangchainPinecone here
+    # Use LangchainPinecone here
     vectordb =LangchainPinecone.from_documents(
     documents=chunks,
     embedding=embedding,
