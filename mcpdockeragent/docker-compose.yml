@@ -1,23 +1,20 @@
-version: '3.12'
+version: "3.12"
 
 services:
   math:
     build:
       context: .
+    container_name: math_agent
     command: python maths.py
-    stdin_open: true
-    tty: true
 
   weather:
     build:
       context: .
+    container_name: weather_agent
     command: python weather.py
-    ports:
-      - "8001:8001"
 
   countstring:
     build:
       context: .
-    command: python count_string.py
-    ports:
-      - "8002:8002"
+    container_name: countstring_agent
+    command: python countstring.py

@@ -10,3 +10,10 @@ fastmcp
 langchain-groq	
 python-dotenv
 mcp-use
+openai 
+langchain 
+langchain-huggingface 
+  pinecone-client 
+  langchain-pinecone 
+  sentence-transformers 
+  pypdf

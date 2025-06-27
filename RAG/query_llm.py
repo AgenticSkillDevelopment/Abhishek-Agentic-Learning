@@ -45,5 +45,5 @@ qa = RetrievalQA.from_chain_type(
 
 # ✅ Ask user query
 query = input("🧠 Ask me anything: ")
-result = qa.invoke({"query": query})
+result = qa.astream({"query": query})
 print("\n🤖 Answer:", result['result'])
