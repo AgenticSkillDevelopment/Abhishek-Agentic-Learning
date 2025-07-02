@@ -1,0 +1,6 @@
+{
+    "name": "video_detection_server",
+    "transport": "streamable-http",
+    "endpoint": "http://localhost:8000/mcp"
+  }
+  
