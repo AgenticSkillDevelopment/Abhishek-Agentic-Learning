@@ -1,0 +1,7 @@
+{"mcpServers":{
+    "check_multiple_currencies": {
+      "url": "http://localhost:8010/mcp",
+      "transport": "streamable_http"
+    }
+}
+}

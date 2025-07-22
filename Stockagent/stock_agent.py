@@ -9,8 +9,9 @@ os.environ["PORT"] = "8000"
 mcp = FastMCP(name="stock_checker")
 
 # Register stock price tool
-@mcp.tool()
+@mcp.tool(description="Fetch the current stock price for a given stock symbol like TSLA or AAPL.")
 async def get_stock_price(symbol: str) -> str:
+    print("hello...........................ennhisufnhisfn")
     try:
         stock = yf.Ticker(symbol)
         price = stock.info.get("regularMarketPrice")

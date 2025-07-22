@@ -12,7 +12,7 @@ async def run_memory_chat():
 
 
     # MCP tool config file
-    config_file = "stock_mcp.json"
+    config_file = "currency_mcp.json"
 
     print("📡 Initializing Stock Price Assistant...")
 

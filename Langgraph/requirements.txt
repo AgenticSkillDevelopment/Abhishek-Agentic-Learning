@@ -1,0 +1,16 @@
+langchain
+langgraph
+langchain-core
+langchain-community
+typing-extensions
+python-dotenv
+httpx
+
+# Groq LLM
+langchain-groq
+
+# MCP
+mcp-use
+mcp[cli]
+langchain-mcp-adapters
+

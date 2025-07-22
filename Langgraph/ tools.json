@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+        "currency_checker": {
+            "tools": [
+                {
+                    "name": "checkdataset",
+                    "description": "Returns all datasets",
+                    "url": "http://localhost:8010/mcp/check_for_datasets"
+                },
+                {
+                    "name": "lastid",
+                    "description": "Return last id",
+                    "url": "http://localhost:8010/mcp/check_last_update_id"
+                }
+            ]
+        }
+    }
+}
