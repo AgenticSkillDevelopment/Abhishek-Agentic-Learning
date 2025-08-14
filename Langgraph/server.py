@@ -452,7 +452,7 @@ def process_query(payload: dict) -> pd.DataFrame:
         if not os.path.exists(DATA_FILE):
             raise FileNotFoundError(f"Data file not found at {DATA_FILE}")
         df = pd.read_csv(DATA_FILE)
-        print(f'{df.head(10)=}')
+        
         
         
         
